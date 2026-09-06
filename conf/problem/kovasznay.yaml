@@ -1,0 +1,16 @@
+name: "kovasznay"
+n_epochs: 10_000
+#n_epochs: 100
+max_lr: 1e-3
+min_lr: 1e-4
+lr_scheduler: "cosine"
+features: [2, 50, 50, 50, 50, 50, 3] # 5x50 is standard
+device: "cuda"
+test_model_afterwards: True
+use_lhs: True
+use_res: False
+
+# for start phase analysis
+# not the same as n_epochs = 2200 because of cosine lr
+end_early: False
+end_at_epoch: 2200

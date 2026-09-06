@@ -1,0 +1,27 @@
+
+# for the burgers experiment
+name: "burgers"
+n_epochs: 5000
+#n_epochs: 100
+max_lr: 1e-3
+min_lr: 1e-4
+lr_scheduler: "cosine"
+#features: [2, 50, 50, 50, 50, 50, 50, 50, 50, 1] # 5x50 is standard
+features: [2, 50, 50, 50, 50, 50, 1]
+
+# wide nets
+#features: [2, 200, 200, 200, 200, 200, 1]
+device: "cuda"
+test_model_afterwards: True
+use_lhs: True
+# residual connections
+use_res: False
+# no resampling
+fixed_batch: False
+k_batches: 1
+#k_batches: 5000
+
+# for start phase analysis
+# not the same as n_epochs = 2220 because of cosine lr
+end_early: False
+end_at_epoch: 2220

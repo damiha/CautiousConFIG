@@ -1,0 +1,10 @@
+name: "schroedinger"
+n_epochs: 100_000
+#n_epochs: 100
+max_lr: 1e-3
+min_lr: 1e-4
+lr_scheduler: "cosine"
+features: [2, 50, 50, 50, 50, 50, 2] # 5x50 is standard
+device: "cuda"
+test_model_afterwards: True
+use_lhs: True

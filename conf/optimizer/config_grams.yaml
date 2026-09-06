@@ -1,0 +1,3 @@
+name: "ConFIGGrams"
+use_caution: False # gets ignored anyway
+filename: "config_grams_run.json"

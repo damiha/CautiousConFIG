@@ -1,0 +1,7 @@
+name: "AblatedConFIG"
+use_caution: True
+filename: "cautious_config_ablation_no_mask_cautious_rescaling.json"
+
+"random_masking": False
+"rescale_strategy": "cautious"
+"some_mask": False

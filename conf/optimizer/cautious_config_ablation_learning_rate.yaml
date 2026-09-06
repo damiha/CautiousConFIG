@@ -1,0 +1,6 @@
+name: "AblatedConFIG"
+use_caution: True
+filename: "cautious_config_ablation_learning_rate_run.json"
+
+"random_masking": False
+"rescale_strategy": "adam_output"

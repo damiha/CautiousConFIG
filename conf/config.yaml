@@ -1,0 +1,39 @@
+# defaults (always need that)
+defaults:
+  - problem: burgers
+  - optimizer: adam
+  - override hydra/launcher: joblib
+  - _self_
+
+seed: 0
+
+#trackers: [
+#  "updated_percentage",
+#  "val_mse", "cosine_sim", "stepwise_alignment",
+#  "singular_value", "stepwise_mask", "path_turtuosity", "multi_task_curvature", "multi_loss", "gradient_dot_product", "config_scaling"]
+
+#trackers: ["multi_loss"]
+trackers: ["multi_loss", "gradient_dot_product", "config_scaling"]
+#trackers: ["gradient_dot_product", "config_scaling"]
+#trackers: ["cosine_sim_k6", "val_mse", "multi_loss"]
+#trackers: ["val_mse", "multi_loss", "infinity_norm", "updated_percentage"]
+#trackers: ["val_mse", "multi_loss", "gradient_alignment", "updated_percentage_per_layer"]
+
+#trackers: ["updated_percentage_per_layer", "snr", "gsum_snr", "gradient_alignment"]
+#trackers: ["mask_split_stats"]
+#trackers: ["param_group"]
+#trackers: ["val_mse", "multi_loss"]
+#trackers: ["updated_distribution_mask"]
+#trackers: ["sliding_window_mask"]
+
+# general settings for multi run
+hydra:
+  job:
+    chdir: True
+  
+  launcher:
+    n_jobs: 1
+
+  sweeper:
+    params: 
+      seed: 0, 1, 2, 3, 4
