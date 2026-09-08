@@ -1,0 +1,35 @@
+{
+    "n_epochs": 100000,
+    "device": "cuda",
+    "max_lr": 0.001,
+    "min_lr": 0.0001,
+    "lr_scheduler": "cosine",
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        2
+    ],
+    "use_lhs": true,
+    "optimizer": "LConFIG",
+    "use_caution": true,
+    "caution_type": "global",
+    "filename": "schroedinger_gcautious_lconfig_run.json",
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "best_mses": [
+        0.054049068171356664,
+        0.1626173075712554,
+        0.10047017803871575,
+        0.24330741929556393,
+        0.22331765606227022
+    ]
+}

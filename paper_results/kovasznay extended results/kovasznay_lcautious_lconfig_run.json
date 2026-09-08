@@ -1,0 +1,35 @@
+{
+    "n_epochs": 10000,
+    "device": "cuda",
+    "max_lr": 0.001,
+    "min_lr": 0.0001,
+    "lr_scheduler": "cosine",
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        3
+    ],
+    "use_lhs": true,
+    "optimizer": "LConFIG",
+    "use_caution": true,
+    "caution_type": "local",
+    "filename": "kovasznay_lcautious_lconfig_run.json",
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "best_mses": [
+        4.370780631028282e-06,
+        3.57915512457554e-05,
+        7.271437374593041e-06,
+        5.300772693333596e-06,
+        7.24433431285141e-05
+    ]
+}

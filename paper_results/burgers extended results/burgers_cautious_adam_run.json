@@ -1,0 +1,34 @@
+{
+    "n_epochs": 5000,
+    "min_lr": 0.0001,
+    "max_lr": 0.001,
+    "lr_scheduler": "cosine",
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        1
+    ],
+    "device": "cuda",
+    "use_lhs": true,
+    "optimizer": "Adam",
+    "use_caution": true,
+    "filename": "burgers_cautious_adam_run.json",
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "best_mses": [
+        0.0006669248558557792,
+        0.0018538134144595105,
+        0.0007114087970946508,
+        0.001576292817280728,
+        0.000418445186208196
+    ]
+}

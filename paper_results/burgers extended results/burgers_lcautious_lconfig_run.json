@@ -1,0 +1,35 @@
+{
+    "n_epochs": 5000,
+    "min_lr": 0.0001,
+    "max_lr": 0.001,
+    "lr_scheduler": "cosine",
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        1
+    ],
+    "device": "cuda",
+    "use_lhs": true,
+    "optimizer": "LConFIG",
+    "use_caution": true,
+    "filename": "burgers_lcautious_lconfig_run.json",
+    "caution_type": "local",
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "best_mses": [
+        0.0009619734812472392,
+        0.0004743128695393721,
+        0.000582006794595704,
+        0.0005796038417806802,
+        0.0003472876692436412
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        1
+    ],
+    "device": "cuda",
+    "optimizer_mode": "AblatedConFIG",
+    "n_epochs": 5000,
+    "use_caution": true,
+    "use_lhs": true,
+    "max_lr": 0.001,
+    "min_lr": 0.0001,
+    "lr_scheduler": "cosine",
+    "rescale_strategy": "cautious",
+    "random_masking": true,
+    "filename": "burgers_cautious_config_ablation_random_masking_run.json",
+    "compute_val_loss_every": 10,
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "best_mses": [
+        0.0008742385939743946,
+        0.0015417156480193785,
+        0.0006434665440040732,
+        0.0011434824103976082,
+        0.00041204821490252165,
+        0.0005450650718750751,
+        0.0008393347351537749,
+        0.001115062520162777,
+        0.0004025392384112384,
+        0.0015008029695011281
+    ]
+}

@@ -1,0 +1,19 @@
+\begin{table}[H]
+    \centering
+    \label{tab:optimizer_results}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Optimizer} & \textbf{Mean} & \textbf{Std} & \textbf{Std. Sample Mean} \\
+        \midrule
+        Adam + C(global)-ConFIG (global) * & 0.0005806 & 0.0000984 & 0.0000440 \\
+        Adam + C(local) ConFIG (local) * & 0.0005890 & 0.0002296 & 0.0001027 \\
+        Adam + C(global) ConFIG (local) * & 0.0006521 & 0.0003326 & 0.0001487 \\
+        Adam + C(global)-M-ConFIG (global) * & 0.0007521 & 0.0005503 & 0.0002461 \\
+        Adam + ConFIG (global) & 0.0007833 & 0.0003014 & 0.0001348 \\
+        Adam + ConFIG (local) & 0.0008048 & 0.0003414 & 0.0001527 \\
+        Adam + M-ConFIG (global) & 0.0010275 & 0.0004703 & 0.0002103 \\
+        C-Adam & 0.0010454 & 0.0006291 & 0.0002814 \\
+        Adam & 0.0013189 & 0.0005660 & 0.0002531 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

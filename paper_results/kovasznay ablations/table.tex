@@ -1,0 +1,17 @@
+\begin{table}[H]
+    \centering
+    \label{tab:optimizer_results}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Optimizer} & \textbf{Mean} & \textbf{Std} & \textbf{Std. Sample Mean} \\
+        \midrule
+        Adam + C(global)-ConFIG (global) * & 2.01255e-06 & 7.56772e-07 & 2.39312e-07 \\
+        Adam + C(global) ConFIG + No Ablation (A) & 2.05307e-06 & 7.46593e-07 & 2.36093e-07 \\
+        Adam + ConFIG + Cautious Scaling (A) & 2.60436e-06 & 5.87928e-07 & 1.85919e-07 \\
+        Adam + ConFIG (global) & 3.09809e-06 & 1.88466e-06 & 5.95983e-07 \\
+        Adam + C(global) ConFIG + Random Mask (A) & 3.12143e-06 & 1.19372e-06 & 3.77489e-07 \\
+        Adam + C(global) ConFIG +  Learning Rate (A) & 4.11717e-06 & 5.32439e-06 & 1.68372e-06 \\
+        Adam + C(global) ConFIG +  No Rescaling (A) & 5.64228e-06 & 8.98042e-06 & 2.83986e-06 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

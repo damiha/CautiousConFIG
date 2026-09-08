@@ -1,0 +1,34 @@
+{
+    "n_epochs": 10000,
+    "device": "cuda",
+    "max_lr": 0.001,
+    "min_lr": 0.0001,
+    "lr_scheduler": "cosine",
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        3
+    ],
+    "use_lhs": true,
+    "optimizer": "MConFIG",
+    "use_caution": false,
+    "filename": "kovasznay_mconfig_run.json",
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "best_mses": [
+        2.3724524457456307e-06,
+        8.661214211687504e-06,
+        3.550533787516044e-06,
+        4.333593346094454e-06,
+        1.1417117327470352e-06
+    ]
+}

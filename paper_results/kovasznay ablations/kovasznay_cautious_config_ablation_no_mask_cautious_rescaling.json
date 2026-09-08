@@ -1,0 +1,48 @@
+{
+    "features": [
+        2,
+        50,
+        50,
+        50,
+        50,
+        50,
+        3
+    ],
+    "device": "cuda",
+    "optimizer_mode": "AblatedConFIG",
+    "n_epochs": 10000,
+    "use_caution": true,
+    "use_lhs": true,
+    "max_lr": 0.001,
+    "min_lr": 0.0001,
+    "lr_scheduler": "cosine",
+    "rescale_strategy": "cautious",
+    "random_masking": false,
+    "some_mask": false,
+    "filename": "kovasznay_cautious_config_ablation_no_mask_cautious_rescaling.json",
+    "compute_val_loss_every": 10,
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "best_mses": [
+        2.380491747810171e-06,
+        3.2449229894079932e-06,
+        2.6635287434030295e-06,
+        2.583982924998989e-06,
+        1.521567228146649e-06,
+        2.350074813181498e-06,
+        3.32686743166864e-06,
+        3.4138475623497918e-06,
+        2.3808135566554538e-06,
+        2.1774914805908816e-06
+    ]
+}
