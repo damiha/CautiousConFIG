@@ -43,7 +43,7 @@ for _ in range(steps):
 #print(t_curr)
 hs = np.array(hs_total)
 
-#np.savez_compressed("schroedinger_numerical_solution.npz", h=hs)
+np.savez_compressed("schroedinger_numerical_solution.npz", h=hs)
 
 '''
 t_selected = 0.79
@@ -74,7 +74,7 @@ plt.imshow(u, extent=[0, np.pi / 2, -5, 5], origin="lower", aspect="auto", cmap=
 plt.xlabel("t")
 plt.ylabel("x")
 plt.colorbar(location="top", pad=0.08)
-plt.savefig("u_vals.png", bbox_inches='tight', dpi=300)
+plt.savefig("schroedinger_u_vals.png", bbox_inches='tight', dpi=300)
 
 
 
@@ -83,7 +83,7 @@ plt.imshow(v, extent=[0, np.pi / 2, -5, 5], origin="lower", aspect="auto", cmap=
 plt.xlabel("t")
 plt.ylabel("x")
 plt.colorbar(location="top", pad=0.08)
-plt.savefig("v_vals.png", bbox_inches='tight', dpi=300)
+plt.savefig("schroedinger_v_vals.png", bbox_inches='tight', dpi=300)
 
 
 plt.figure(figsize=(5, 5))
@@ -91,4 +91,4 @@ plt.imshow(mag_h, extent=[0, np.pi / 2, -5, 5], origin="lower", aspect="auto", c
 plt.xlabel("t")
 plt.ylabel("x")
 plt.colorbar(location="top", pad=0.08)
-plt.savefig("h_mag_vals.png", bbox_inches='tight', dpi=300)
+plt.savefig("schroedinger_h_mag_vals.png", bbox_inches='tight', dpi=300)
