@@ -44,8 +44,8 @@ plt.imshow(u, extent=[0, 1, -1,  1], origin="lower", aspect="auto", cmap="coolwa
 plt.colorbar()
 plt.xlabel("t")
 plt.ylabel("x")
-plt.savefig("solution.png", dpi=300, bbox_inches='tight')
+plt.savefig("burgers_solution.png", dpi=300, bbox_inches='tight')
 
-#filename = "burgers_numerical_solution.npz"
-#np.savez_compressed(filename, u=u)
-#print(f"Numerical solution saved under {filename}")
+filename = "burgers_numerical_solution.npz"
+np.savez_compressed(filename, u=u)
+print(f"Numerical solution saved under {filename}")
