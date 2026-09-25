@@ -7,7 +7,4 @@ hydra:
   sweeper:
     params:
       seed: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-      #seed: 0, 1, 2
-      #optimizer: cautious_config_ablation_random_masking, cautious_config_ablation_learning_rate
-      #optimizer: cautious_config_ablation_no_rescaling
-      optimizer: cautious_config_ablation_no_mask_cautious_rescaling
+      optimizer: cautious_config_no_ablation, cautious_config_ablation_random_masking, cautious_config_ablation_learning_rate, cautious_config_ablation_no_rescaling, cautious_config_ablation_no_mask_cautious_rescaling
