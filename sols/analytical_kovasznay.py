@@ -24,7 +24,7 @@ plt.imshow(u_x, origin="lower", extent=[-0.5, 1, -0.5, 1.5], cmap="coolwarm")
 plt.colorbar()
 plt.xlabel("x")
 plt.ylabel("y")
-plt.savefig("u_x.png", dpi=300)
+plt.savefig("kovasznay_u_x.png", dpi=300)
 plt.close()
 
 
@@ -33,7 +33,7 @@ plt.imshow(u_y, origin="lower", extent=[-0.5, 1, -0.5, 1.5], cmap="coolwarm")
 plt.colorbar()
 plt.xlabel("x")
 plt.ylabel("y")
-plt.savefig("u_y.png", dpi=300)
+plt.savefig("kovasznay_u_y.png", dpi=300)
 plt.close()
 
 
@@ -42,7 +42,7 @@ plt.imshow(p, origin="lower", extent=[-0.5, 1, -0.5, 1.5], cmap="coolwarm")
 plt.colorbar()
 plt.xlabel("x")
 plt.ylabel("y")
-plt.savefig("p.png", dpi=300)
+plt.savefig("kovasznay_p.png", dpi=300)
 plt.close()
 
-#np.savez_compressed("kovasznay_analytical_solution.npz", u_x=u_x, u_y = u_y, p=p)
+np.savez_compressed("kovasznay_analytical_solution.npz", u_x=u_x, u_y = u_y, p=p)
