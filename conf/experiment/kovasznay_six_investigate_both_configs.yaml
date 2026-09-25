@@ -6,11 +6,5 @@ defaults:
 hydra:
   sweeper:
     params:
-      #seed: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-      seed: 0, 1, 2, 3, 4
-      #seed: 0, 1, 2
-      #optimizer: adam, cautious_adam, config, cautious_config
-      #optimizer: adam, cautious_adam, config, cautious_config
-      #optimizer: config, cautious_config
+      seed: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
       optimizer: config, cautious_config
-      #optimizer: official_adam, official_config
