@@ -1,5 +1,7 @@
 # Cautious Conflict-Free Inverse Gradient Methods
 
+Link to the paper: https://arxiv.org/abs/2610.31855
+
 ## Setup
 
 Create a new virtual environment: `python3 -m venv venv`
