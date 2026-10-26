@@ -42,3 +42,17 @@ if __name__ == "__main__":
 ```
 
 Run `python3 extract_stats_from_multirun.py` and get `.json` files back
+
+## How to cite
+
+```bibtex
+@misc{hattler2026cautiousconflictfreeinversegradient,
+      title={Cautious Conflict-Free Inverse Gradient Methods}, 
+      author={Damian Hattler and Qiang Liu and Nils Thuerey},
+      year={2026},
+      eprint={2610.31855},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2610.31855}, 
+}
+``
